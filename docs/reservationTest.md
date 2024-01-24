@@ -7,4 +7,4 @@ Oncelikle uygulamaya giris yapan musteri hesabinin telefon veya eposta adresinin
 3. Secimini yaptiktan sonra satin alima gitmeden once tekrar telefon dogrulamasi alir, dogrulamasiyla ayni zamanda kalici olarak Yukselt uygulamasinda hesabi olusturulur
 4. Satin alimi gerceklestirir
 
-Test sonrasinda satin alim Saleor dashboard uzerinden goruntulunebilir veya otomatik eposta alinabilir.
+Test sonrasinda ilgili numaraya satin alimla ilgili mesaj gelmesi beklenir.

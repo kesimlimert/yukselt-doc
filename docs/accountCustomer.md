@@ -1,5 +1,19 @@
 # Musteri Hesabi Olustumak
 
-1. Yukselt Saleor Dashboard' a giris yaptiktan sonra soldaki menude bulunan "Customers" ' a tiklayin.
-2. Sag ustte bulunan siyah "Create Customer" butonuna tiklayin.
-3. Formda gerekli bilgileri doldurduktan sonra sag alttaki "Save" butonuna tiklayin.
+JavaScript Ornegi:
+```javascript
+ fetch("https://yukseltapi.com/createCustomer", {
+  method: "POST",
+  body: JSON.stringify({
+        firstName: "John",
+        lastName: "Doe",
+        email: "john@mail.com",
+        phone: "5454323154",
+    },
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+
+```

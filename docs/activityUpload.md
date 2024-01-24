@@ -1,8 +1,29 @@
-### Aktivite Olusturmak
+### Aktivitelerin Yuklenmesi
 
-1. Dashboardda solda bulunan "Products" a tiklayin.
-2. Sag ustte bulunan siyah "Create Products" butonuna tiklayin.
-3. "Product Type" seceneklerinin icinden "Experiences" i secin.
-4. Formda istenen aktivite ile ilgili yerleri doldurup sag altta bulunan "Save" butonuna basin.
+JavaScript Ornegi:
+```javascript
+ fetch("https://yukseltapi.com/uploadActivities", {
+  method: "POST",
+  body: JSON.stringify({
+    activities: [
+      {
+        activityName: "Deniz Turu",
+        activityType: "Su aktivitesi",
+        price: "300",
+        currency: "$"
+      },
+      {
+        activityName: "Parasut",
+        activityType: "Su aktivitesi",
+        price: "200",
+        currency: "$"
+      },
+      ...
+    ];
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
 
-*Dashboardda eklenen urunleri, ekledikten hemen sonra uygulamaya yansiyacaktir.*
+```

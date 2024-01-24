@@ -1,8 +1,35 @@
-### Otel Odasi Olusturmak
+### Otel Odalarinin Yuklenmesi
 
-1. Dashboardda solda bulunan "Products" a tiklayin.
-2. Sag ustte bulunan siyah "Create Products" butonuna tiklayin.
-3. "Product Type" seceneklerinin icinden "Hotel Rooms" u secin.
-4. Formda istenen oda ile ilgili yerleri doldurup sag altta bulunan "Save" butonuna basin.
+JavaScript Ornegi:
+```javascript
+ fetch("https://yukseltapi.com/uploadRooms", {
+  method: "POST",
+  body: JSON.stringify({
+    rooms: [
+      {
+        roomView: "Deniz Manzarali",
+        roomType: "King Deluxe",
+        roomSpecs: ['Mutfak', 'Jakuzi', 'King Boy Yatak'],
+        pricePerNight: "3000",
+        currency: "$",
+        roomName: "Deniz Manzarali Guzel Oda",
+        roomId: "1q23ed"
+      },
+      {
+        roomView: "Deniz Manzarali",
+        roomType: "King Deluxe",
+        roomSpecs: ['Mutfak', 'Jakuzi', 'King Boy Yatak'],
+        pricePerNight: "3000",
+        currency: "$",
+        roomName: "Deniz Manzarali Obur Oda",
+        roomId: "2q13ea"
+      },
+      ...
+    ];
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
 
-*Dashboardda eklenen urunleri, ekledikten hemen sonra uygulamaya yansiyacaktir.*
+```
